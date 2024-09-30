@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d3669;
+}
+
+.container .text {
+    position: relative;
+    color: #73ccf5;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.container .fixed-text {
+    color: #7391f5;
+}
+
+.text.variable-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d3669; /* The same color as the website background*/
+    border-left: 3px solid #000000; /* The I color */
+    animation: animate 4s steps(14) infinite;
+}
+
+@keyframes animate {
+    40%, 60%{
+        left: 100%
+    }
+    100%{
+        left: 0%
+    }
+}
+
+.options {
+    position: absolute;
+    padding-top: 350px;
+    color: white;
+}
+
+input[type=text] {
+    border: 2px solid #231885;
+    background-color: #5d54b3;
+    color: #73ccf5;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: white;
+}
+
