@@ -10,6 +10,7 @@ body {
     color: #73ccf5;
     font-size: 40px;
     font-weight: 600;
+    user-select: none;
 }
 
 .container .fixed-text {
@@ -48,9 +49,10 @@ input[type=text] {
     background-color: #5d54b3;
     color: #73ccf5;
     font-weight: bold;
+    user-select: none;
 }
 
 ::placeholder {
     color: white;
+    user-select: none;
 }
-
